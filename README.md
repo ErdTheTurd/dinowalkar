@@ -1,18 +1,19 @@
 # Dino Walk
 
-Static website for **Dino Walk**, a forthcoming Apple Vision Pro app that places life-size dinosaurs in your real space and shows museum-sourced facts about each one.
+Static site for **Dino Walk**, a forthcoming Apple Vision Pro app that places dinosaurs at museum-listed size in your room and shows sourced facts about each one.
 
 Coming soon to Apple Vision Pro.
 
 ## Site
 
-This is a simple static site with no build step:
+No build step. No CNAME; a domain is not set up yet.
 
-- `index.html` — overview, how it works, dinosaurs, credits, and support
+- `index.html` — overview, scale, dinosaurs, credits, and support
 - `privacy.html` — privacy policy
-- `styles.css` — shared styles
+- `assets/styles.css` — shared styles (system fonts only)
+- `assets/window-in-room.jpg` — visionOS simulator screenshot of the fact window in a room
 
-Facts and measurements are copied from the app’s bundled catalog. There is no CNAME in this repository; domains are not set up yet.
+Facts and measurements are copied from the app’s bundled catalog.
 
 ## Support
 
