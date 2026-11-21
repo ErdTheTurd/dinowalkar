@@ -3,268 +3,293 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Dino Walk brings life-size dinosaurs walking through your real space on Apple Vision Pro, with museum-sourced facts about each one. Coming soon.">
-  <title>Dino Walk — Coming soon to Apple Vision Pro</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Dino Walk — a 12-metre T. rex on your floor</title>
+  <meta name="description" content="Dino Walk places a dinosaur at museum-listed size in your room on Apple Vision Pro, and shows sourced facts about each one. Coming soon.">
+  <meta name="theme-color" content="#efe6d2">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
-      <div class="wrap header-inner">
+      <div class="wrap">
+      <nav class="nav" aria-label="Primary">
         <a class="brand" href="index.html">Dino Walk</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="index.html#how-it-works">How it works</a>
-        <a href="index.html#dinosaurs">Dinosaurs</a>
-        <a href="index.html#credits">Credits</a>
-        <a href="index.html#support">Support</a>
-        <a href="privacy.html">Privacy</a>
+        <ul class="nav-links">
+          <li><a href="index.html#scale">Scale</a></li>
+          <li><a href="index.html#dinosaurs">Dinosaurs</a></li>
+          <li><a href="index.html#credits">Credits</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
       </nav>
       </div>
     </header>
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <header class="hero">
       <div class="wrap hero-inner">
-        <p class="eyebrow">Coming soon to Apple Vision Pro</p>
-        <h1 id="hero-title">Life-size dinosaurs, walking through your room.</h1>
-        <p class="lede">Dino Walk places a dinosaur at true scale in your real space. Watch it walk across your floor, then read facts about it — each one taken from a museum source and shown with a link.</p>
+        <p class="wordmark">Dino Walk</p>
+        <h1>A 12-metre T. rex, walking across your floor.</h1>
+        <p class="lede">On Apple Vision Pro, the dinosaur is placed at the length listed by the Natural History Museum, London. Each fact in the app cites its source.</p>
+        <p class="soon">Coming soon to Apple Vision Pro</p>
       </div>
-    </section>
+    </header>
 
-    <section id="how-it-works" class="section" aria-labelledby="how-title">
-      <div class="wrap">
-        <p class="eyebrow">How it works</p>
-        <h2 id="how-title">Pick a dinosaur. Read the facts. Open the walk.</h2>
-        <ol class="steps">
+    <figure class="plate-photo">
+      <div class="mat">
+        <img src="assets/window-in-room.jpg" width="2000" height="1106" alt="The Dino Walk window floating in a living room in the visionOS simulator, with a list of six dinosaurs and fact cards for Tyrannosaurus rex.">
+      </div>
+      <figcaption>The fact window in a room, captured from the visionOS simulator. Tyrannosaurus rex is selected: 12.0 m, from the Natural History Museum, London.</figcaption>
+    </figure>
+
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
+      <div class="wrap narrow">
+        <h2 id="how-title">What it does</h2>
+        <ol class="catalog">
           <li>
-            <h3>Choose a dinosaur</h3>
-            <p>Browse six well-known dinosaurs in the Dino Walk window, from Tyrannosaurus rex to Parasaurolophus.</p>
+            <h3>Pick a dinosaur</h3>
+            <p>Six animals are in the app: Tyrannosaurus rex, Triceratops, Stegosaurus, Brachiosaurus, Velociraptor, and Parasaurolophus.</p>
           </li>
           <li>
-            <h3>Read sourced facts</h3>
-            <p>Every claim is taken from a museum source shown on the card. The facts are bundled in the app, so they work offline.</p>
+            <h3>Read the museum notes</h3>
+            <p>Every claim is copied from the Natural History Museum, London, or the American Museum of Natural History. The card links to the page it came from. The notes are bundled in the app, so they work offline.</p>
           </li>
           <li>
-            <h3>Walk it through your room</h3>
-            <p>On Apple Vision Pro, open the walk. Dino Walk uses world sensing only on your device to place a life-size dinosaur on the floor, then walks it through your space.</p>
+            <h3>Open the walk</h3>
+            <p>The app uses world sensing only on the device to find the floor, then places the dinosaur at life size and walks it through the room.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section id="dinosaurs" class="section section-alt" aria-labelledby="dino-title">
-      <div class="wrap">
-        <p class="eyebrow">The dinosaurs</p>
-        <h2 id="dino-title">Six animals, at life size, with real sources.</h2>
-        <p class="section-intro">Measurements and facts below are copied from the app’s bundled catalog. Each fact links to the museum page it came from.</p>
-        <div class="dino-grid">
-        <article class="dino-card" id="tyrannosaurus-rex">
-          <p class="kicker">T. rex</p>
-          <h3>Tyrannosaurus rex</h3>
-          <p class="period">Late Cretaceous, 68–66 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>12.0 m  ·  39 ft</dd></div>
-            <div class="stat"><dt>Weight</dt><dd>7.0 t  ·  15432 lb</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Carnivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Tyrannosaurus as 12.0 m long and 7,000 kg, a two-legged carnivore that lived in the Late Cretaceous (68–66 million years ago) in what is now Canada and the USA. Its name means “tyrant lizard.”</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html">Tyrannosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>T. rex had 60 saw-edged, bone-crushing teeth, with teeth up to 20 cm long. Together with its jaws, these delivered the strongest bite of any known land animal — three to five times more powerful than a lion’s — allowing it to crunch through bone.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html">Tyrannosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+    <section class="section" id="scale" aria-labelledby="scale-title">
+      <div class="wrap narrow">
+        <h2 id="scale-title">Life size, by the book</h2>
+        <p class="intro">Lengths below are those listed by the Natural History Museum, London, and stored in the app. The sitting room is a 4-metre sketch, for comparison only — not a measured room.</p>
+        <div class="scale" role="img" aria-label="Relative lengths of the six dinosaurs compared with a 4-metre room sketch. Brachiosaurus is 22 metres, Tyrannosaurus rex 12 metres, Triceratops, Stegosaurus and Parasaurolophus 9 metres, Velociraptor 1.8 metres.">
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Brachiosaurus</span>
+            <span class="scale-len">22.0 m</span>
           </div>
-        </article>
-
-        <article class="dino-card" id="triceratops">
-          <p class="kicker">Triceratops</p>
-          <h3>Triceratops</h3>
-          <p class="period">Late Cretaceous, 68–66 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>9.0 m  ·  30 ft</dd></div>
-            <div class="stat"><dt>Weight</dt><dd>10.0 t  ·  22046 lb</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Herbivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Triceratops as 9.0 m long and 10,000 kg, a four-legged herbivore that lived in the Late Cretaceous (68–66 million years ago) in what is now the USA. Its name means “three-horned face.”</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/triceratops.html">Triceratops | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>With its three horns, parrot-like beak, and a large frill that could reach nearly one metre across, the skull of Triceratops is one of the largest and most striking of any land animal. It had a sharp beak to snip vegetation and rows of teeth that formed shearing surfaces for grinding tough plant material, including tough palm fronds.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/triceratops.html">Triceratops | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:100.00%"></span>
           </div>
-        </article>
-
-        <article class="dino-card" id="stegosaurus">
-          <p class="kicker">Stegosaurus</p>
-          <h3>Stegosaurus</h3>
-          <p class="period">Late Jurassic, 152–145 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>9.0 m  ·  30 ft</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Herbivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Stegosaurus as 9.0 m long, a plant-eating armoured dinosaur that lived in the Late Jurassic (152–145 million years ago) in what is now the USA. Its name means “roof lizard.” The museum’s directory does not list a weight for this animal.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html">Stegosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>The bony plates along its back were embedded in the skin, not attached to the skeleton, which is why in most fossil finds the plates are separated from the body. When O. C. Marsh described the first fossil, he thought the plates lay flat on its back. After finding a specimen held in place by mud, he realised they stood vertically, alternately on either side of the spine.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html">Stegosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+          <span class="visually-hidden">NHM length</span>
+        </div>
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Tyrannosaurus rex</span>
+            <span class="scale-len">12.0 m</span>
           </div>
-        </article>
-
-        <article class="dino-card" id="brachiosaurus">
-          <p class="kicker">Brachiosaurus</p>
-          <h3>Brachiosaurus</h3>
-          <p class="period">Late Jurassic, 152–145 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>22.0 m  ·  72 ft</dd></div>
-            <div class="stat"><dt>Weight</dt><dd>46.9 t  ·  103397 lb</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Herbivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Brachiosaurus as 22.0 m long and 46,900 kg, a four-legged herbivorous sauropod that lived in the Late Jurassic (152–145 million years ago) in what is now the USA. Its name means “arm lizard.”</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html">Brachiosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>Brachiosaurus’s front legs — its “arms” — were longer than its back legs. This gave it a distinctive upward-tilted body posture which, along with its long neck, made it well adapted for feeding on tall trees. It lived at the same time and in the same environment as Brontosaurus, but was much taller and fed higher in the canopy.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html">Brachiosaurus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:54.55%"></span>
           </div>
-        </article>
-
-        <article class="dino-card" id="velociraptor">
-          <p class="kicker">Velociraptor</p>
-          <h3>Velociraptor</h3>
-          <p class="period">Late Cretaceous, 74–70 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>1.8 m  ·  6 ft</dd></div>
-            <div class="stat"><dt>Weight</dt><dd>7 kg  ·  15 lb</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Carnivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Velociraptor as 1.8 m long and 7 kg, a two-legged carnivorous small theropod that lived in the Late Cretaceous (74–70 million years ago) in what is now Mongolia. Its name means “quick plunderer.” The type species is Velociraptor mongoliensis, named by Osborn in 1924.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html">Velociraptor | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>As portrayed in the Jurassic Park movies, Velociraptor was recreated at twice its actual size and closely modelled on Deinonychus. Though this was seen as unscientific at the time, soon after the first film was released a related dinosaur, Utahraptor, was discovered — even larger than the virtual Velociraptors.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html">Velociraptor | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+          <span class="visually-hidden">NHM length</span>
+        </div>
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Triceratops</span>
+            <span class="scale-len">9.0 m</span>
           </div>
-        </article>
-
-        <article class="dino-card" id="parasaurolophus">
-          <p class="kicker">Parasaurolophus</p>
-          <h3>Parasaurolophus</h3>
-          <p class="period">Late Cretaceous, 77–73 million years ago</p>
-          <dl class="stats">
-            <div class="stat"><dt>Length</dt><dd>9.0 m  ·  30 ft</dd></div>
-            <div class="stat"><dt>Weight</dt><dd>5.0 t  ·  11023 lb</dd></div>
-            <div class="stat"><dt>Diet</dt><dd>Herbivorous</dd></div>
-          </dl>
-          <div class="facts">
-            <figure class="fact">
-              <blockquote>
-                <p>The Natural History Museum, London, lists Parasaurolophus as 9.0 m long and 5,000 kg, a herbivorous large ornithopod that lived in the Late Cretaceous (77–73 million years ago) in what is now Canada and the USA. It ate pine needles and tree leaves with a beak and toothed jaws, and could move on two or four legs. Its name means “like Saurolophus.” The type species is Parasaurolophus walkeri, named by Parks in 1922.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html">Parasaurolophus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
-            <figure class="fact">
-              <blockquote>
-                <p>In the 1990s, scientists realised they could recreate the sound a Parasaurolophus would make if it blew air through its crest. The result is a deep, trumpeting bellow that the dinosaur might have used to warn others about nearby dangers. The museum notes that nobody knows if it really sounded like this, but that this is as close as we are likely to get for now.</p>
-              </blockquote>
-              <figcaption>
-                <cite><a href="https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html">Parasaurolophus | Natural History Museum</a></cite>
-              </figcaption>
-            </figure>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:40.91%"></span>
           </div>
-        </article>
+          <span class="visually-hidden">NHM length</span>
+        </div>
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Stegosaurus</span>
+            <span class="scale-len">9.0 m</span>
+          </div>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:40.91%"></span>
+          </div>
+          <span class="visually-hidden">NHM length</span>
+        </div>
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Parasaurolophus</span>
+            <span class="scale-len">9.0 m</span>
+          </div>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:40.91%"></span>
+          </div>
+          <span class="visually-hidden">NHM length</span>
+        </div>
+        <div class="scale-row sketch">
+          <div class="scale-meta">
+            <span class="scale-name">Sitting room (sketch)</span>
+            <span class="scale-len">4.0 m</span>
+          </div>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:18.18%"></span>
+          </div>
+          <span class="visually-hidden">sketch, for comparison</span>
+        </div>
+        <div class="scale-row">
+          <div class="scale-meta">
+            <span class="scale-name">Velociraptor</span>
+            <span class="scale-len">1.8 m</span>
+          </div>
+          <div class="scale-track" aria-hidden="true">
+            <span class="scale-bar" style="width:8.18%"></span>
+          </div>
+          <span class="visually-hidden">NHM length</span>
+        </div>
         </div>
       </div>
     </section>
 
-    <section id="credits" class="section" aria-labelledby="credits-title">
+    <section class="section" id="dinosaurs" aria-labelledby="dino-title">
       <div class="wrap narrow">
-        <p class="eyebrow">Credits</p>
-        <h2 id="credits-title">3D models</h2>
-        <ul class="credit-list">
-          <li>
-            <a href="https://gobkit.itch.io/gobkit-free-dinosaur-pack">Gobkit Free Dinosaur Pack</a>
-            — CC0. Used for Tyrannosaurus rex, Triceratops, and Stegosaurus.
-          </li>
-          <li>
-            <a href="https://opengameart.org/content/low-spec-velociraptor">Low Spec Velociraptor</a>
-            by pistachio on OpenGameArt — CC-BY 4.0.
-          </li>
-        </ul>
-        <p class="fine-print">Facts are drawn from the Natural History Museum, London, Dino Directory and the American Museum of Natural History, and are attributed on each card.</p>
+        <h2 id="dino-title">The six dinosaurs</h2>
+        <p class="intro">Two notes from each animal’s catalog card, copied in full, with their sources.</p>
+        <div class="plates">
+      <article class="plate" id="tyrannosaurus-rex">
+        <header class="plate-head">
+          <p class="plate-kicker">T. rex</p>
+          <h3>Tyrannosaurus rex</h3>
+          <p class="plate-period">Late Cretaceous, 68–66 million years ago</p>
+          <p class="plate-measure">12.0 m  ·  39 ft  ·  7.0 t  ·  15432 lb  ·  Carnivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Tyrannosaurus as 12.0 m long and 7,000 kg, a two-legged carnivore that lived in the Late Cretaceous (68–66 million years ago) in what is now Canada and the USA. Its name means “tyrant lizard.”</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html">Tyrannosaurus | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>T. rex had 60 saw-edged, bone-crushing teeth, with teeth up to 20 cm long. Together with its jaws, these delivered the strongest bite of any known land animal — three to five times more powerful than a lion’s — allowing it to crunch through bone.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html">Tyrannosaurus | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="plate" id="triceratops">
+        <header class="plate-head">
+          <p class="plate-kicker">Triceratops</p>
+          <h3>Triceratops</h3>
+          <p class="plate-period">Late Cretaceous, 68–66 million years ago</p>
+          <p class="plate-measure">9.0 m  ·  30 ft  ·  10.0 t  ·  22046 lb  ·  Herbivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Triceratops as 9.0 m long and 10,000 kg, a four-legged herbivore that lived in the Late Cretaceous (68–66 million years ago) in what is now the USA. Its name means “three-horned face.”</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/triceratops.html">Triceratops | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>With its three horns, parrot-like beak, and a large frill that could reach nearly one metre across, the skull of Triceratops is one of the largest and most striking of any land animal. It had a sharp beak to snip vegetation and rows of teeth that formed shearing surfaces for grinding tough plant material, including tough palm fronds.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/triceratops.html">Triceratops | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="plate" id="stegosaurus">
+        <header class="plate-head">
+          <p class="plate-kicker">Stegosaurus</p>
+          <h3>Stegosaurus</h3>
+          <p class="plate-period">Late Jurassic, 152–145 million years ago</p>
+          <p class="plate-measure">9.0 m  ·  30 ft  ·  Herbivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Stegosaurus as 9.0 m long, a plant-eating armoured dinosaur that lived in the Late Jurassic (152–145 million years ago) in what is now the USA. Its name means “roof lizard.” The museum’s directory does not list a weight for this animal.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html">Stegosaurus | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>The bony plates along its back were embedded in the skin, not attached to the skeleton, which is why in most fossil finds the plates are separated from the body. When O. C. Marsh described the first fossil, he thought the plates lay flat on its back. After finding a specimen held in place by mud, he realised they stood vertically, alternately on either side of the spine.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html">Stegosaurus | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="plate" id="brachiosaurus">
+        <header class="plate-head">
+          <p class="plate-kicker">Brachiosaurus</p>
+          <h3>Brachiosaurus</h3>
+          <p class="plate-period">Late Jurassic, 152–145 million years ago</p>
+          <p class="plate-measure">22.0 m  ·  72 ft  ·  46.9 t  ·  103397 lb  ·  Herbivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Brachiosaurus as 22.0 m long and 46,900 kg, a four-legged herbivorous sauropod that lived in the Late Jurassic (152–145 million years ago) in what is now the USA. Its name means “arm lizard.”</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html">Brachiosaurus | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>Brachiosaurus’s front legs — its “arms” — were longer than its back legs. This gave it a distinctive upward-tilted body posture which, along with its long neck, made it well adapted for feeding on tall trees. It lived at the same time and in the same environment as Brontosaurus, but was much taller and fed higher in the canopy.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html">Brachiosaurus | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="plate" id="velociraptor">
+        <header class="plate-head">
+          <p class="plate-kicker">Velociraptor</p>
+          <h3>Velociraptor</h3>
+          <p class="plate-period">Late Cretaceous, 74–70 million years ago</p>
+          <p class="plate-measure">1.8 m  ·  6 ft  ·  7 kg  ·  15 lb  ·  Carnivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Velociraptor as 1.8 m long and 7 kg, a two-legged carnivorous small theropod that lived in the Late Cretaceous (74–70 million years ago) in what is now Mongolia. Its name means “quick plunderer.” The type species is Velociraptor mongoliensis, named by Osborn in 1924.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html">Velociraptor | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>As portrayed in the Jurassic Park movies, Velociraptor was recreated at twice its actual size and closely modelled on Deinonychus. Though this was seen as unscientific at the time, soon after the first film was released a related dinosaur, Utahraptor, was discovered — even larger than the virtual Velociraptors.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html">Velociraptor | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="plate" id="parasaurolophus">
+        <header class="plate-head">
+          <p class="plate-kicker">Parasaurolophus</p>
+          <h3>Parasaurolophus</h3>
+          <p class="plate-period">Late Cretaceous, 77–73 million years ago</p>
+          <p class="plate-measure">9.0 m  ·  30 ft  ·  5.0 t  ·  11023 lb  ·  Herbivorous</p>
+        </header>
+        <div class="plate-facts">
+          <figure class="fact">
+            <blockquote><p>The Natural History Museum, London, lists Parasaurolophus as 9.0 m long and 5,000 kg, a herbivorous large ornithopod that lived in the Late Cretaceous (77–73 million years ago) in what is now Canada and the USA. It ate pine needles and tree leaves with a beak and toothed jaws, and could move on two or four legs. Its name means “like Saurolophus.” The type species is Parasaurolophus walkeri, named by Parks in 1922.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html">Parasaurolophus | Natural History Museum</a></figcaption>
+          </figure>
+          <figure class="fact">
+            <blockquote><p>In the 1990s, scientists realised they could recreate the sound a Parasaurolophus would make if it blew air through its crest. The result is a deep, trumpeting bellow that the dinosaur might have used to warn others about nearby dangers. The museum notes that nobody knows if it really sounded like this, but that this is as close as we are likely to get for now.</p></blockquote>
+            <figcaption><a href="https://www.nhm.ac.uk/discover/dino-directory/parasaurolophus.html">Parasaurolophus | Natural History Museum</a></figcaption>
+          </figure>
+        </div>
+      </article>
+        </div>
       </div>
     </section>
 
-    <section id="support" class="section section-alt" aria-labelledby="support-title">
+    <section class="section" id="credits" aria-labelledby="credits-title">
       <div class="wrap narrow">
-        <p class="eyebrow">Support</p>
-        <h2 id="support-title">Questions and help</h2>
-        <p>Dino Walk is coming soon to Apple Vision Pro. For now, contact us through the App Store listing once the app is available.</p>
+        <h2 id="credits-title">Credits</h2>
+        <ul class="plain-list">
+          <li><a href="https://gobkit.itch.io/gobkit-free-dinosaur-pack">Gobkit Free Dinosaur Pack</a> — CC0. Used for Tyrannosaurus rex, Triceratops, and Stegosaurus.</li>
+          <li><a href="https://opengameart.org/content/low-spec-velociraptor">Low Spec Velociraptor</a> by pistachio on OpenGameArt — CC-BY 4.0.</li>
+        </ul>
+        <p class="quiet">Facts are taken from the Natural History Museum, London, Dino Directory and the American Museum of Natural History, and are linked on each card.</p>
+      </div>
+    </section>
+
+    <section class="section" id="support" aria-labelledby="support-title">
+      <div class="wrap narrow">
+        <h2 id="support-title">Support</h2>
+        <p>For now, contact us through the App Store listing once Dino Walk is available.</p>
         <!-- TODO: Add a support email or contact page once a domain and address are set up. Do not invent one. -->
-        <p><a href="privacy.html">Read the privacy policy</a></p>
+        <p><a href="privacy.html">Privacy policy</a></p>
       </div>
     </section>
   </main>
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <p>Dino Walk. Coming soon to Apple Vision Pro.</p>
-        <p><a href="privacy.html">Privacy</a> · <a href="index.html#support">Support</a> · <a href="index.html#credits">Credits</a></p>
+        <p class="footer-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="index.html#support">Support</a>
+          <a href="index.html#credits">Credits</a>
+        </p>
       </div>
     </footer>
 </body>
